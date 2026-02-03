@@ -3,7 +3,7 @@
 class KalmanFilter:
     """Simple Kalman filter for a brewery fermentation process."""
     
-    def __init__(self, P_init: float = 1.0, sigma_sensor_default: float = 1.0):
+    def __init__(self, P_init: float = 1648.12, sigma_sensor_default: float = 34.2):
         """
         Initialize the Kalman filter.
         
@@ -16,7 +16,7 @@ class KalmanFilter:
     
     def reset(self):
         """Reset internal state to defaults."""
-        self._P_prev = 1.0
+        self._P_prev = 1648.12
     
     def step(self, sigma_sensor: float, x_measure: float, x_cal: float) -> dict:
         """
