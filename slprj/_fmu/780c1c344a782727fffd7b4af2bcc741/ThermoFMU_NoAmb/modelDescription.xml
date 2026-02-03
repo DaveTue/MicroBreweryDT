@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="ThermoFMU_NoAmb"
+  guid="{eac53829-e49e-4303-b0e9-931946015a64}"
+  description=""
+  generationTool="OpenModelica Compiler OpenModelica v1.22.3 (64-bit)"
+  generationDateAndTime="2026-01-12T16:25:52Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="0">
+  <ModelExchange
+    modelIdentifier="ThermoFMU_NoAmb">
+    <SourceFiles>
+      <File name="ThermoFMU_NoAmb.c" />
+      <File name="ThermoFMU_NoAmb_functions.c" />
+      <File name="ThermoFMU_NoAmb_records.c" />
+      <File name="ThermoFMU_NoAmb_01exo.c" />
+      <File name="ThermoFMU_NoAmb_02nls.c" />
+      <File name="ThermoFMU_NoAmb_03lsy.c" />
+      <File name="ThermoFMU_NoAmb_04set.c" />
+      <File name="ThermoFMU_NoAmb_05evt.c" />
+      <File name="ThermoFMU_NoAmb_06inz.c" />
+      <File name="ThermoFMU_NoAmb_07dly.c" />
+      <File name="ThermoFMU_NoAmb_08bnd.c" />
+      <File name="ThermoFMU_NoAmb_09alg.c" />
+      <File name="ThermoFMU_NoAmb_10asr.c" />
+      <File name="ThermoFMU_NoAmb_11mix.c" />
+      <File name="ThermoFMU_NoAmb_12jac.c" />
+      <File name="ThermoFMU_NoAmb_13opt.c" />
+      <File name="ThermoFMU_NoAmb_14lnz.c" />
+      <File name="ThermoFMU_NoAmb_15syn.c" />
+      <File name="ThermoFMU_NoAmb_16dae.c" />
+      <File name="ThermoFMU_NoAmb_17inl.c" />
+      <File name="ThermoFMU_NoAmb_18spd.c" />
+      <File name="ThermoFMU_NoAmb_init_fmu.c" />
+      <File name="ThermoFMU_NoAmb_FMU.c" />
+      <File name="./gc/memory_pool.c" />
+      <File name="./gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/context.c" />
+      <File name="./util/division.c" />
+      <File name="./util/doubleEndedList.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/omc_numbers.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/jacobian_util.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/spatialDistribution.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+    </SourceFiles>
+  </ModelExchange>
+  <CoSimulation
+    modelIdentifier="ThermoFMU_NoAmb"
+    needsExecutionTool="false"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canRunAsynchronuously = "false"
+    canBeInstantiatedOnlyOncePerProcess="false"
+    canNotUseMemoryManagementFunctions="false"
+    canGetAndSetFMUstate="false"
+    canSerializeFMUstate="false"
+    providesDirectionalDerivative="false">
+    <SourceFiles>
+      <File name="ThermoFMU_NoAmb.c" />
+      <File name="ThermoFMU_NoAmb_functions.c" />
+      <File name="ThermoFMU_NoAmb_records.c" />
+      <File name="ThermoFMU_NoAmb_01exo.c" />
+      <File name="ThermoFMU_NoAmb_02nls.c" />
+      <File name="ThermoFMU_NoAmb_03lsy.c" />
+      <File name="ThermoFMU_NoAmb_04set.c" />
+      <File name="ThermoFMU_NoAmb_05evt.c" />
+      <File name="ThermoFMU_NoAmb_06inz.c" />
+      <File name="ThermoFMU_NoAmb_07dly.c" />
+      <File name="ThermoFMU_NoAmb_08bnd.c" />
+      <File name="ThermoFMU_NoAmb_09alg.c" />
+      <File name="ThermoFMU_NoAmb_10asr.c" />
+      <File name="ThermoFMU_NoAmb_11mix.c" />
+      <File name="ThermoFMU_NoAmb_12jac.c" />
+      <File name="ThermoFMU_NoAmb_13opt.c" />
+      <File name="ThermoFMU_NoAmb_14lnz.c" />
+      <File name="ThermoFMU_NoAmb_15syn.c" />
+      <File name="ThermoFMU_NoAmb_16dae.c" />
+      <File name="ThermoFMU_NoAmb_17inl.c" />
+      <File name="ThermoFMU_NoAmb_18spd.c" />
+      <File name="ThermoFMU_NoAmb_init_fmu.c" />
+      <File name="ThermoFMU_NoAmb_FMU.c" />
+      <File name="./gc/memory_pool.c" />
+      <File name="./gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/context.c" />
+      <File name="./util/division.c" />
+      <File name="./util/doubleEndedList.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/omc_numbers.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/jacobian_util.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/spatialDistribution.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+    </SourceFiles>
+  </CoSimulation>
+  <LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+  </LogCategories>
+  <DefaultExperiment startTime="0.0" stopTime="1.0" tolerance="1e-06"/>
+  <ModelVariables>
+  <!-- Index of variable = "1" -->
+  <ScalarVariable
+    name="T"
+    valueReference="0"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "2" -->
+  <ScalarVariable
+    name="der(T)"
+    valueReference="1"
+    >
+    <Real derivative="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "3" -->
+  <ScalarVariable
+    name="Q_beer"
+    valueReference="2"
+    causality="output"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "4" -->
+  <ScalarVariable
+    name="Temperature"
+    valueReference="3"
+    causality="output"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "5" -->
+  <ScalarVariable
+    name="Vol_meters"
+    valueReference="4"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "6" -->
+  <ScalarVariable
+    name="cg_rate"
+    valueReference="5"
+    causality="input"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "7" -->
+  <ScalarVariable
+    name="density"
+    valueReference="6"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "8" -->
+  <ScalarVariable
+    name="pump_state"
+    valueReference="7"
+    causality="input"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "9" -->
+  <ScalarVariable
+    name="sg"
+    valueReference="8"
+    causality="input"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "10" -->
+  <ScalarVariable
+    name="A_coil"
+    valueReference="9"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.1817"/>
+  </ScalarVariable>
+  <!-- Index of variable = "11" -->
+  <ScalarVariable
+    name="Cp"
+    valueReference="10"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.2552"/>
+  </ScalarVariable>
+  <!-- Index of variable = "12" -->
+  <ScalarVariable
+    name="T_0"
+    valueReference="11"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "13" -->
+  <ScalarVariable
+    name="T_pump"
+    valueReference="12"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="290.15"/>
+  </ScalarVariable>
+  <!-- Index of variable = "14" -->
+  <ScalarVariable
+    name="Volume"
+    valueReference="13"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="25.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "15" -->
+  <ScalarVariable
+    name="dH"
+    valueReference="14"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="91200.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "16" -->
+  <ScalarVariable
+    name="h"
+    valueReference="15"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="322.89"/>
+  </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="3" dependencies="1 6 8 9" dependenciesKind="dependent dependent dependent dependent" />
+      <Unknown index="4" dependencies="1" dependenciesKind="dependent" />
+    </Outputs>
+    <Derivatives>
+      <Unknown index="2" dependencies="1 6 8 9" dependenciesKind="dependent dependent dependent dependent" />
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index="1" dependencies="" dependenciesKind="" />
+      <Unknown index="2" dependencies="6 8 9 10 11 13 14 15 16" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="3" dependencies="6 8 9 10 11 13 14 15 16" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="4" dependencies="" dependenciesKind="" />
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>

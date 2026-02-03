@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  ThermoFMU_NoAmb_fmiGetTypesPlatform @1
+  ThermoFMU_NoAmb_fmiGetVersion @2
+  ThermoFMU_NoAmb_fmiSetDebugLogging @3
+  ThermoFMU_NoAmb_fmiInstantiate @4
+  ThermoFMU_NoAmb_fmiFreeInstance @5
+  ThermoFMU_NoAmb_fmiSetupExperiment @6
+  ThermoFMU_NoAmb_fmiEnterInitializationMode @7
+  ThermoFMU_NoAmb_fmiExitInitializationMode @8
+  ThermoFMU_NoAmb_fmiTerminate @9
+  ThermoFMU_NoAmb_fmiReset @10
+  ThermoFMU_NoAmb_fmiGetReal @11
+  ThermoFMU_NoAmb_fmiGetInteger @12
+  ThermoFMU_NoAmb_fmiGetBoolean @13
+  ThermoFMU_NoAmb_fmiGetString @14
+  ThermoFMU_NoAmb_fmiSetReal @15
+  ThermoFMU_NoAmb_fmiSetInteger @16
+  ThermoFMU_NoAmb_fmiSetBoolean @17
+  ThermoFMU_NoAmb_fmiSetString @18
+  ThermoFMU_NoAmb_fmiGetFMUstate @19
+  ThermoFMU_NoAmb_fmiSetFMUstate @20
+  ThermoFMU_NoAmb_fmiFreeFMUstate @21
+  ThermoFMU_NoAmb_fmiSerializedFMUstateSize @22
+  ThermoFMU_NoAmb_fmiSerializeFMUstate @23
+  ThermoFMU_NoAmb_fmiDeSerializeFMUstate @24
+  ThermoFMU_NoAmb_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  ThermoFMU_NoAmb_fmiEnterEventMode @26
+  ThermoFMU_NoAmb_fmiNewDiscreteStates @27
+  ThermoFMU_NoAmb_fmiEnterContinuousTimeMode @28
+  ThermoFMU_NoAmb_fmiCompletedIntegratorStep @29
+  ThermoFMU_NoAmb_fmiSetTime @30
+  ThermoFMU_NoAmb_fmiSetContinuousStates @31
+  ThermoFMU_NoAmb_fmiGetDerivatives @32
+  ThermoFMU_NoAmb_fmiGetEventIndicators @33
+  ThermoFMU_NoAmb_fmiGetContinuousStates @34
+  ThermoFMU_NoAmb_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  ThermoFMU_NoAmb_fmiSetRealInputDerivatives @36
+  ThermoFMU_NoAmb_fmiGetRealOutputDerivatives @37
+  ThermoFMU_NoAmb_fmiDoStep @38
+  ThermoFMU_NoAmb_fmiCancelStep @39
+  ThermoFMU_NoAmb_fmiGetStatus @40
+  ThermoFMU_NoAmb_fmiGetRealStatus @41
+  ThermoFMU_NoAmb_fmiGetIntegerStatus @42
+  ThermoFMU_NoAmb_fmiGetBooleanStatus @43
+  ThermoFMU_NoAmb_fmiGetStringStatus @44
