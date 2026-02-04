@@ -15,6 +15,16 @@ yeast_gram =11;
 
 t_cool = 293.15;
 
+delta_t = 1.0;
+rho = 1;
+%t_step = 1;
+Cp = 1.2552;
+Vol = volume;
+delta_H = -91200;
+h = 200.89;
+A = 0.1817;
+T_k0=293.15;
+
 set_param("test_brewery", "StartTime", num2str(t_init));
 set_param('test_brewery','FixedStep', num2str(t_step));
 set_param('test_brewery','StopTime',num2str(t_stop))
