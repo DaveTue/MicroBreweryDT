@@ -1,15 +1,15 @@
 % t_init = 0;
 t_init = 0;
 t_step = 1;
-t_stop = 16500;
-% sug_init = 751.64;
+t_stop = 18200;
+%sug_init = 534.82;
 sug_init = 1011.832;
 sug_current = sug_init;
 % sug_current = 477.34;
 volume = 25;
 % temperature=296;
-temp = 296;
-% temp = 298.15;
+%temp = 296;
+temp = 298.15;
 yeast_gram =11;
 
 %sigma_model = 1648.125;

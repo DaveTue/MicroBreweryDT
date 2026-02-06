@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fmiModelDescription fmiVersion="2.0" generationDateAndTime="2026-02-06T15:43:12Z" generationTool="Simulink (R2023b)" guid="{c1c412b2-b0fe-cad0-e26f-a1717704a7c6}" modelName="suggarFerm" numberOfEventIndicators="0" variableNamingConvention="structured" version="1.4">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="true" canGetAndSetFMUstate="false" canHandleVariableCommunicationStepSize="false" canNotUseMemoryManagementFunctions="true" canSerializeFMUstate="false" modelIdentifier="suggarFerm"/>
+  <DefaultExperiment startTime="0" stepSize="1" stopTime="18200"/>
+  <VendorAnnotations>
+    <Tool name="Simulink">
+      <Simulink>
+        <ImportCompatibility FMUProduct="standalone FMU" requireMATLABOnPath="no" requireRelease="all"/>
+        <SimulinkModelInterface>
+          <Inport blockPath="suggarFerm/temperature" dataType="double" dimension="[1]" portName="temperature" portNumber="1" sampleTime="[0 0]" uniquePortName="temperature" unit=""/>
+          <Outport blockPath="suggarFerm/c_conc" dataType="double" dimension="[1]" portName="c_conc" portNumber="1" sampleTime="[0 0]" uniquePortName="c_conc" unit=""/>
+          <Outport blockPath="suggarFerm/delta_c_conc" dataType="double" dimension="[1]" portName="delta_c_conc" portNumber="2" sampleTime="[0 0]" uniquePortName="delta_c_conc" unit=""/>
+        </SimulinkModelInterface>
+      </Simulink>
+    </Tool>
+  </VendorAnnotations>
+  <ModelVariables>
+    <ScalarVariable causality="input" description="temperature" name="temperature" valueReference="0" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 1-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="c_conc" initial="calculated" name="c_conc" valueReference="1" variability="continuous">
+      <Real/>
+      <!--Index = 2-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="delta_c_conc" initial="calculated" name="delta_c_conc" valueReference="2" variability="continuous">
+      <Real/>
+      <!--Index = 3-->
+    </ScalarVariable>
+    <ScalarVariable causality="independent" description="time" name="time" valueReference="3" variability="continuous">
+      <Real/>
+      <!--Index = 4-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="sug_current" initial="exact" name="sug_current" valueReference="4" variability="tunable">
+      <Real start="1011.832"/>
+      <!--Index = 5-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="t_step" initial="exact" name="t_step" valueReference="5" variability="tunable">
+      <Real start="1"/>
+      <!--Index = 6-->
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="2"/>
+      <Unknown index="3"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="2"/>
+      <Unknown index="3"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>

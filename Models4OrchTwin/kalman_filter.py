@@ -28,7 +28,7 @@ class KalmanFilter:
             x_cal: Model-calculated value
             
         Returns:
-            Dict with Kalman gain 'K' and state estimate 'x_hat'
+            state estimate 'x_hat'
         """
         p_prev = self._P_prev
         sigma = sigma_sensor if sigma_sensor > 0 else self._sigma_sensor_default
@@ -51,4 +51,5 @@ class KalmanFilter:
         # Store for next step
         self._P_prev = P
         
-        return {"K": K, "x_hat": x_hat}
+        return  x_hat
+        # return {"K": K, "x_hat": x_hat}

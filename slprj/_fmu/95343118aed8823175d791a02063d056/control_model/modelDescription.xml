@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fmiModelDescription fmiVersion="2.0" generationDateAndTime="2026-02-06T15:22:05Z" generationTool="Simulink (R2023b)" guid="{e00a5e4a-5446-0d1a-2652-932f2b326c23}" modelName="control_model" numberOfEventIndicators="0" variableNamingConvention="structured" version="1.1">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="true" canGetAndSetFMUstate="false" canHandleVariableCommunicationStepSize="false" canNotUseMemoryManagementFunctions="true" canSerializeFMUstate="false" modelIdentifier="control_model"/>
+  <DefaultExperiment startTime="0" stepSize="1" stopTime="18500"/>
+  <VendorAnnotations>
+    <Tool name="Simulink">
+      <Simulink>
+        <ImportCompatibility FMUProduct="standalone FMU" requireMATLABOnPath="no" requireRelease="all"/>
+        <SimulinkModelInterface>
+          <Inport blockPath="control_model/T_measure" dataType="double" dimension="[1]" portName="T_measure" portNumber="1" sampleTime="[0 0]" uniquePortName="T_measure" unit=""/>
+          <Inport blockPath="control_model/T_control" dataType="double" dimension="[1]" portName="T_control" portNumber="2" sampleTime="[0 0]" uniquePortName="T_control" unit=""/>
+          <Inport blockPath="control_model/freq" dataType="double" dimension="[1]" portName="freq" portNumber="3" sampleTime="[0 0]" uniquePortName="freq" unit=""/>
+          <Outport blockPath="control_model/u" dataType="double" dimension="[1]" portName="u" portNumber="1" sampleTime="[0 0]" uniquePortName="u" unit=""/>
+        </SimulinkModelInterface>
+      </Simulink>
+    </Tool>
+  </VendorAnnotations>
+  <ModelVariables>
+    <ScalarVariable causality="input" description="T_measure" name="T_measure" valueReference="0" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 1-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="T_control" name="T_control" valueReference="1" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 2-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="freq" name="freq" valueReference="2" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 3-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="u" initial="calculated" name="u" valueReference="3" variability="continuous">
+      <Real/>
+      <!--Index = 4-->
+    </ScalarVariable>
+    <ScalarVariable causality="independent" description="time" name="time" valueReference="4" variability="continuous">
+      <Real/>
+      <!--Index = 5-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="t_step" initial="exact" name="t_step" valueReference="5" variability="tunable">
+      <Real start="1"/>
+      <!--Index = 6-->
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="4"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="4"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
