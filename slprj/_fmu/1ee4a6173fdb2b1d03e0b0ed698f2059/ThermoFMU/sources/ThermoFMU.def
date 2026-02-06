@@ -1,0 +1,54 @@
+EXPORTS
+  ;***************************************************
+  ;Common Functions
+  ;****************************************************
+  ThermoFMU_fmiGetTypesPlatform @1
+  ThermoFMU_fmiGetVersion @2
+  ThermoFMU_fmiSetDebugLogging @3
+  ThermoFMU_fmiInstantiate @4
+  ThermoFMU_fmiFreeInstance @5
+  ThermoFMU_fmiSetupExperiment @6
+  ThermoFMU_fmiEnterInitializationMode @7
+  ThermoFMU_fmiExitInitializationMode @8
+  ThermoFMU_fmiTerminate @9
+  ThermoFMU_fmiReset @10
+  ThermoFMU_fmiGetReal @11
+  ThermoFMU_fmiGetInteger @12
+  ThermoFMU_fmiGetBoolean @13
+  ThermoFMU_fmiGetString @14
+  ThermoFMU_fmiSetReal @15
+  ThermoFMU_fmiSetInteger @16
+  ThermoFMU_fmiSetBoolean @17
+  ThermoFMU_fmiSetString @18
+  ThermoFMU_fmiGetFMUstate @19
+  ThermoFMU_fmiSetFMUstate @20
+  ThermoFMU_fmiFreeFMUstate @21
+  ThermoFMU_fmiSerializedFMUstateSize @22
+  ThermoFMU_fmiSerializeFMUstate @23
+  ThermoFMU_fmiDeSerializeFMUstate @24
+  ThermoFMU_fmiGetDirectionalDerivative @25
+  ;***************************************************
+  ;Functions for FMI for Model Exchange
+  ;****************************************************
+  ThermoFMU_fmiEnterEventMode @26
+  ThermoFMU_fmiNewDiscreteStates @27
+  ThermoFMU_fmiEnterContinuousTimeMode @28
+  ThermoFMU_fmiCompletedIntegratorStep @29
+  ThermoFMU_fmiSetTime @30
+  ThermoFMU_fmiSetContinuousStates @31
+  ThermoFMU_fmiGetDerivatives @32
+  ThermoFMU_fmiGetEventIndicators @33
+  ThermoFMU_fmiGetContinuousStates @34
+  ThermoFMU_fmiGetNominalsOfContinuousStates @35
+  ;***************************************************
+  ;Functions for FMI for Co-Simulation
+  ;****************************************************
+  ThermoFMU_fmiSetRealInputDerivatives @36
+  ThermoFMU_fmiGetRealOutputDerivatives @37
+  ThermoFMU_fmiDoStep @38
+  ThermoFMU_fmiCancelStep @39
+  ThermoFMU_fmiGetStatus @40
+  ThermoFMU_fmiGetRealStatus @41
+  ThermoFMU_fmiGetIntegerStatus @42
+  ThermoFMU_fmiGetBooleanStatus @43
+  ThermoFMU_fmiGetStringStatus @44
