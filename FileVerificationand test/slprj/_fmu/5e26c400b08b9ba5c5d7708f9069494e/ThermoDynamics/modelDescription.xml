@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription fmiVersion="3.0" modelName="ThermoDynamics" instantiationToken="07ab7d61-0122-11f1-99aa-84ba59757b9a" generationTool="PythonFMU3 0.3.4" generationDateAndTime="2026-02-03T17:01:49+00:00" variableNamingConvention="structured" description="Simple thermodynamics model with cooling and pump effects" author="David manrique">
+	<CoSimulation needsExecutionTool="true" canBeInstantiatedOnlyOncePerProcess="false" canGetAndSetFMUState="false" canSerializeFMUState="false" modelIdentifier="ThermoDynamics" canHandleVariableCommunicationStepSize="true"/>
+	<LogCategories>
+		<Category name="logStatusWarning" description="Log messages with fmi3Warning status."/>
+		<Category name="logStatusDiscard" description="Log messages with fmi3Discard status."/>
+		<Category name="logStatusError" description="Log messages with fmi3Error status."/>
+		<Category name="logStatusFatal" description="Log messages with fmi3Fatal status."/>
+		<Category name="logAll" description="Log all messages."/>
+	</LogCategories>
+	<ModelVariables>
+		<Float64 name="time" valueReference="0" causality="independent"/>
+		<Float64 name="delta_t" valueReference="1" causality="parameter" start="1"/>
+		<Float64 name="Cp" valueReference="2" causality="parameter" start="1.2552"/>
+		<Float64 name="Vol" valueReference="3" causality="parameter" start="25"/>
+		<Float64 name="delta_H" valueReference="4" causality="parameter" start="-91200"/>
+		<Float64 name="h" valueReference="5" causality="parameter" start="200.89"/>
+		<Float64 name="A" valueReference="6" causality="parameter" start="0.1817"/>
+		<Float64 name="T_k" valueReference="7" causality="input" start="291.15"/>
+		<Float64 name="T_cool" valueReference="8" causality="input" start="291.15"/>
+		<Float64 name="delta_C" valueReference="9" causality="input" start="0"/>
+		<Float64 name="pump" valueReference="10" causality="input" start="0"/>
+		<Float64 name="density" valueReference="11" causality="input" start="1.034"/>
+		<Float64 name="T_k1" valueReference="12" causality="output"/>
+	</ModelVariables>
+	<ModelStructure>
+		<Output valueReference="12"/>
+		<InitialUnknown valueReference="12"/>
+	</ModelStructure>
+</fmiModelDescription>

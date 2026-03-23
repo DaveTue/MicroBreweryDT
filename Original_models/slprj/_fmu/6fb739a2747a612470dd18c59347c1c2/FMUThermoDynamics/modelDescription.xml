@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fmiModelDescription fmiVersion="2.0" generationDateAndTime="2026-03-23T09:22:58Z" generationTool="Simulink (R2023b)" guid="{268fc224-b95c-351c-f6c9-4efa30067b1d}" modelName="FMUThermoDynamics" numberOfEventIndicators="0" variableNamingConvention="structured" version="1.9">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="true" canGetAndSetFMUstate="false" canHandleVariableCommunicationStepSize="false" canNotUseMemoryManagementFunctions="true" canSerializeFMUstate="false" modelIdentifier="FMUThermoDynamics"/>
+  <DefaultExperiment startTime="0" stepSize="1" stopTime="200"/>
+  <VendorAnnotations>
+    <Tool name="Simulink">
+      <Simulink>
+        <ImportCompatibility FMUProduct="standalone FMU" requireMATLABOnPath="no" requireRelease="all"/>
+        <SimulinkModelInterface>
+          <Inport blockPath="FMUThermoDynamics/T_k" dataType="double" dimension="[1]" portName="T_k" portNumber="1" sampleTime="[1 0]" uniquePortName="T_k" unit=""/>
+          <Inport blockPath="FMUThermoDynamics/delta_C" dataType="double" dimension="[1]" portName="delta_C" portNumber="2" sampleTime="[1 0]" uniquePortName="delta_C" unit=""/>
+          <Inport blockPath="FMUThermoDynamics/pump" dataType="double" dimension="[1]" portName="pump" portNumber="3" sampleTime="[1 0]" uniquePortName="pump" unit=""/>
+          <Inport blockPath="FMUThermoDynamics/T_cool" dataType="double" dimension="[1]" portName="T_cool" portNumber="4" sampleTime="[1 0]" uniquePortName="T_cool" unit=""/>
+          <Inport blockPath="FMUThermoDynamics/T_amb" dataType="double" dimension="[1]" portName="T_amb" portNumber="5" sampleTime="[1 0]" uniquePortName="T_amb" unit=""/>
+          <Inport blockPath="FMUThermoDynamics/density" dataType="double" dimension="[1]" portName="density" portNumber="6" sampleTime="[1 0]" uniquePortName="density" unit=""/>
+          <Outport blockPath="FMUThermoDynamics/T_k1" dataType="double" dimension="[1]" portName="T_k1" portNumber="1" sampleTime="[1 0]" uniquePortName="T_k1" unit=""/>
+        </SimulinkModelInterface>
+      </Simulink>
+    </Tool>
+  </VendorAnnotations>
+  <ModelVariables>
+    <ScalarVariable causality="input" description="T_k" name="T_k" valueReference="0" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 1-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="delta_C" name="delta_C" valueReference="1" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 2-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="pump" name="pump" valueReference="2" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 3-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="T_cool" name="T_cool" valueReference="3" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 4-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="T_amb" name="T_amb" valueReference="4" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 5-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="density" name="density" valueReference="5" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 6-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="T_k1" initial="calculated" name="T_k1" valueReference="6" variability="continuous">
+      <Real/>
+      <!--Index = 7-->
+    </ScalarVariable>
+    <ScalarVariable causality="independent" description="time" name="time" valueReference="7" variability="continuous">
+      <Real/>
+      <!--Index = 8-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="A" initial="exact" name="A" valueReference="8" variability="tunable">
+      <Real start="0.31"/>
+      <!--Index = 9-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="A_amb" initial="exact" name="A_amb" valueReference="9" variability="tunable">
+      <Real start="0.754"/>
+      <!--Index = 10-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="Cp" initial="exact" name="Cp" valueReference="10" variability="tunable">
+      <Real start="3.8"/>
+      <!--Index = 11-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="Vol" initial="exact" name="Vol" valueReference="11" variability="tunable">
+      <Real start="25"/>
+      <!--Index = 12-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="delta_H" initial="exact" name="delta_H" valueReference="12" variability="tunable">
+      <Real start="-65"/>
+      <!--Index = 13-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="h" initial="exact" name="h" valueReference="13" variability="tunable">
+      <Real start="678.07"/>
+      <!--Index = 14-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="h_amb" initial="exact" name="h_amb" valueReference="14" variability="tunable">
+      <Real start="42.93"/>
+      <!--Index = 15-->
+    </ScalarVariable>
+    <ScalarVariable causality="parameter" description="t_step" initial="exact" name="t_step" valueReference="15" variability="tunable">
+      <Real start="1"/>
+      <!--Index = 16-->
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="7"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="7"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>

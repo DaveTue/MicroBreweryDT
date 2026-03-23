@@ -21,9 +21,9 @@ class biProducts:
     def yeast_initial(self):
         """initial values of the yeast"""
         MW_yeast = 24  # g/mol
-        self.y_0 = (self._yeast_gram/(self._volume*1000)) / MW_yeast  # mol/L)
+        self.y_0 = (self.yeast_gram/(self.volume*1000)) / MW_yeast  # mol/L)
     
-    def conc_etOH(self, c_sugar: float = 1011.832) -> dict:
+    def conc_etOH(self, c_sugar: float = 1011.832) -> float:
         """
         calculates the ethanol concentration based on sugar concentration.
         
@@ -61,3 +61,10 @@ class biProducts:
         ABV = (c_etOH * self.MW_etOH/density_etOH) / 1000**2 *100  # % v/v
         
         return ABV
+    
+    def calculation(self, c_sugar: float) -> tuple:
+        """ calculates all the biproducts based on the current sugar concentration."""
+        self.yeast_initial()
+        ABV_etOH = self.ABV_etOH(c_sugar)
+        conc_yeast = self.conc_yeast(c_sugar)
+        return ABV_etOH, conc_yeast
